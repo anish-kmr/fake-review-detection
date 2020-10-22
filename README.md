@@ -8,7 +8,8 @@ To setup the project :
 
 1. Clone the Repo
 ```
-git clone https://github.com/anish-kmr/fake-review-detection
+git clone https://github.com/anish-kmr/fake-review-detection.git
+
 cd fake-review-detection
 ```
 
