@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "fake_review_detection",
+		"_postman_id": "7825ac92-0a62-5689-756e-0f57ce496ad8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classify array of reviews as fake(0)/Genuine(1)",
+			"request": {
+				"url": "http://127.0.0.1:5000/classify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reviews\":[\n\t\t\"I love the shoes they are true to size , I wear a 7 1/2 but I ordered a 8 to allow a little extra room and I got just that\",\n\t\t\"Just writing a rare review on these . I love Nike’s but my feet don’t usually. So I’ve ordered and returned a lot. Tried again lol and these ARE AMAZING comfortable. So much that I may order 3 more this year just to have them. The color is so cute and clean and sporty. I’m 99.9% sure I’ve dinally found a pair of Nikes I’m not going to return , fingers crossed \",\n\t\t\"I have only run in them a couple of times, but so far they feel great. I normally wear a size 9, and I ordered a 9.5, and I’m glad I did. There is plenty of room, but not too much. The only thing that will take me getting used to is that they are slightly bulkier than my ASICS. Like any running shoes, I’m sure it will take a little bit of time to work out the stiffness and fully break them in, but they are amazing!\"\n\t\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
